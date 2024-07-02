@@ -39,7 +39,7 @@ function binary(num) {
 //4masala
 function card(num , bool) {
     if (bool === false) {
-        num = num.slice(0, 4) + ` **** **** **` 
+        num = num.slice(0, 4) + ` **** **** **` + num.slice(-2)
         return num
     }else{
         return num
@@ -49,8 +49,8 @@ function card(num , bool) {
 // console.log(card("8600 1234  8743 2589",false));//8600 ****  ****  **89
 
 //5masala
-function checkpassword(password) {
-    qilomadm
+function checkpassword(str) {
+    qilolmadm
 
 }
 // console.log(checkpassword("1234456789"));//false
@@ -64,8 +64,13 @@ function camelCase(str) {
 // console.log( camelCase("lorem-ipsum-dollor"));//loremIpsumDollor
 
 //7masala
-function bigAndSmall(str) {
+function bigAndSmall(num) {
+    let number = num.trim().split(` `).map(Number)
+    let min = Math.min(...number);
+    let max = Math.max(...number);
+
+return `${max}, ${min}`
 }
-console.log(bigAndSmall("1 2 3 4 5"));//5 1
-console.log(bigAndSmall("4 64 75 2"));//75 2
+// console.log(bigAndSmall("1 2 3 4 5"));//5 1
+// console.log(bigAndSmall("4 64 75 2"));//75 2
 
