@@ -50,7 +50,7 @@ function card(num , bool) {
 
 //5masala
 function checkpassword(str) {
-    qilolmadm
+    qilomadm
 
 }
 // console.log(checkpassword("1234456789"));//false
