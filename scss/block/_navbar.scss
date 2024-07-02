@@ -1,0 +1,252 @@
+.header{
+    background:black;
+    height: 70px;
+    display: flex;
+    img{
+        height: 100%;
+        width: 160px;
+    }
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    &__delivery{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        width: 100px;
+        p{
+            font-size: 14px;
+            padding-left: 27px;
+            color: rgb(192, 191, 191);
+            font-weight: 300;
+        }
+
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        b{
+            font-size: 16px;
+        }
+        color: white;
+        // margin-bottom: 20px;
+        i{
+            font-size: 20px;
+        }
+    }
+    &__input{
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+        input{
+            height: 40px;
+            outline: none;
+            width: 780px;
+            padding-left: 10px;
+        }
+        button{
+            height: 40px;
+            width: 50px;
+            background: rgb(254,189,105);
+            border-bottom-right-radius: 5px;
+            font-size: 20px;
+            transition: .3s;
+            border: none;
+            &:hover{
+                color:rgb(254,189,105) ;
+                background: black;
+                border: 1px solid rgb(254,189,105);
+            }
+        }
+    }
+    
+    &__select{
+        height: 40px;
+        width: 50px;
+        border-top-left-radius: 5px;
+        background:rgb(230,230,230);
+        border: none;
+        outline: none;
+    }
+    &__lang{
+        color: white;
+        select{
+        border: none;
+        background: transparent;
+        color: white;
+        outline: none;
+        }
+    }
+    &__regist{
+        p{
+            color:rgb(192, 191, 191);
+            font-size: 14px;
+        }
+        b{
+            color: white;
+            font-size: 16px;
+        }
+    }
+    &__order{
+        p{
+            color:rgb(192, 191, 191);
+            font-size: 14px;
+        }
+        b{
+            color: white;
+            font-size: 16px;
+        }
+    }
+    &__cart{
+        display: flex;
+        gap: 4px;
+        i{
+            color: white;
+            font-size: 20px;
+        }
+        p{
+            color: white;
+            font-size: 18px;
+        }
+    }
+    .menu__btn{
+        color: white;
+        font-size: 24px;
+        display: none;
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background: rgba(219, 138, 16, 0.384);
+        backdrop-filter: blur(10px);
+        box-shadow: -0px 0 10px rgb(146, 42, 4);
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 40px;
+        i{
+            color: white;
+        }
+        .navbar__lang{
+            display: flex;
+        }
+        .navbar__regist{
+            display: flex;
+        }
+        .navbar__order{
+            display: flex;
+        }
+    }
+}
+
+@media (max-width:1360px){
+    .navbar{
+        &__regist{
+            display: none;
+        }
+        &__order{
+            display: none;
+        }
+        &__cart{
+            display: none;
+        }
+    }
+}
+@media (max-width:1200px){
+    .navbar{
+        &__input{
+            input{
+                width: 600px;
+
+            }
+        }
+        &__lang{
+            display: none;
+        }
+    }
+}
+@media (max-width:1100px){
+    .navbar{
+        &__input{
+            input{
+                width: 500px;
+
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    .navbar{
+        &__input{
+            input{
+                width: 300px;
+
+            }
+        }
+    }
+}
+@media (max-width:990px){
+    .navbar{
+        &__input{
+            input{
+                width: 300px;
+
+            }
+        }
+        &__delivery{
+            display: none;
+        }
+    }
+}
+@media (max-width:590px){
+    .navbar{
+        &__input{
+            input{
+                width: 200px;
+
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    .navbar{
+        .menu__btn{
+            display: flex;
+        }
+        &__input{
+            input{
+                width: 150px;
+
+            }
+        }
+    }
+}
+@media (max-width:450px){
+    .navbar{
+        .menu__btn{
+            display: flex;
+            margin-left: 180px;
+        }
+        &__input{
+            display: none;
+            input{
+                display: none;
+
+            }
+        }
+    }
+}
+

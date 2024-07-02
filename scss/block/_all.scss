@@ -1,0 +1,18 @@
+.all{
+    background: rgb(35,47,62);
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    &__box{
+        display: flex;
+        color: white;
+        gap: 25px;
+        @media (max-width:1100px){
+            display: none;
+        }
+    }
+}
